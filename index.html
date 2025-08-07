@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELNET WiFi - Internet RT/RW Net Lingkungan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<script src="js/script.js"></script>
+<body>
+    <!-- Main Website -->
+    <div id="mainWebsite">
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <div class="header-content">
+                    <h1>ELNET WiFi</h1>
+                    <div class="area">
+                        <i class="fas fa-map-marker-alt"></i> RT 01/RW 05, Kelurahan Contoh, Kecamatan Contoh
+                    </div>
+                    <p class="subtitle">Internet Cepat & Stabil untuk Warga Lingkungan</p>
+                    <a href="#packages" class="cta-button">Beli Voucher Sekarang</a>
+                    <a href="#" onclick="showAdminLogin()" class="admin-login">
+                        <i class="fas fa-user-shield"></i> Admin
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav>
+            <div class="container">
+                <ul>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#packages">Paket Voucher</a></li>
+                    <li><a href="#payment">Cara Pembayaran</a></li>
+                    <li><a href="#coverage">Cakupan Area</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Tentang ELNET WiFi</h2>
+                    <p>Penyedia layanan internet RT/RW Net untuk lingkungan kami</p>
+                </div>
+                
+                <div class="features">
+                    <div class="feature-card">
+                        <i class="fas fa-wifi"></i>
+                        <h3>Internet Cepat</h3>
+                        <p>Kecepatan hingga 100 Mbps dengan jaringan fiber optic</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <i class="fas fa-users"></i>
+                        <h3>Khusus Warga</h3>
+                        <p>Layanan khusus untuk warga RT 01/RW 05 dan sekitarnya</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <i class="fas fa-headset"></i>
+                        <h3>Support 24/7</h3>
+                        <p>Tim support siap membantu kapan saja</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <i class="fas fa-infinity"></i>
+                        <h3>Kuota Unlimited</h3>
+                        <p>Internet tanpa batas kuota untuk semua paket</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <i class="fas fa-home"></i>
+                        <h3>Cakupan Rumah</h3>
+                        <p>Jaringan mencakup semua rumah di lingkungan</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Aman & Terpercaya</h3>
+                        <p>Jaringan terenkripsi dengan sistem keamanan</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Packages Section -->
+        <section id="packages">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Paket Voucher</h2>
+                    <p>Pilih voucher sesuai kebutuhan Anda</p>
+                </div>
+                
+                <div class="packages-grid">
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h3>Paket 6 Jam</h3>
+                            <div class="package-price">Rp 5.000<span></span></div>
+                        </div>
+                        <div class="package-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Kuota Unlimited</li>
+                                <li><i class="fas fa-check"></i> Kecepatan 50 Mbps</li>
+                                <li><i class="fas fa-check"></i> Valid 6 Jam</li>
+                                <li><i class="fas fa-check"></i> Support 24/7</li>
+                                <li><i class="fas fa-check"></i> Auto-login</li>
+                            </ul>
+                        </div>
+                        <div class="package-footer">
+                            <button onclick="openPurchaseModal('6 Jam', 5000)" class="package-button">Beli Sekarang</button>
+                        </div>
+                    </div>
+                    
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h3>Paket 1 Hari</h3>
+                            <div class="package-price">Rp 10.000<span></span></div>
+                        </div>
+                        <div class="package-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Kuota Unlimited</li>
+                                <li><i class="fas fa-check"></i> Kecepatan 50 Mbps</li>
+                                <li><i class="fas fa-check"></i> Valid 24 Jam</li>
+                                <li><i class="fas fa-check"></i> Support 24/7</li>
+                                <li><i class="fas fa-check"></i> Auto-login</li>
+                            </ul>
+                        </div>
+                        <div class="package-footer">
+                            <button onclick="openPurchaseModal('1 Hari', 10000)" class="package-button">Beli Sekarang</button>
+                        </div>
+                    </div>
+                    
+                    <div class="package-card popular">
+                        <div class="popular-badge">Paling Laris</div>
+                        <div class="package-header">
+                            <h3>Paket 7 Hari</h3>
+                            <div class="package-price">Rp 25.000<span></span></div>
+                        </div>
+                        <div class="package-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Kuota Unlimited</li>
+                                <li><i class="fas fa-check"></i> Kecepatan 75 Mbps</li>
+                                <li><i class="fas fa-check"></i> Valid 7 Hari</li>
+                                <li><i class="fas fa-check"></i> Support 24/7</li>
+                                <li><i class="fas fa-check"></i> Auto-login</li>
+                            </ul>
+                        </div>
+                        <div class="package-footer">
+                            <button onclick="openPurchaseModal('7 Hari', 25000)" class="package-button">Beli Sekarang</button>
+                        </div>
+                    </div>
+                    
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h3>Paket 30 Hari</h3>
+                            <div class="package-price">Rp 50.000<span></span></div>
+                        </div>
+                        <div class="package-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Kuota Unlimited</li>
+                                <li><i class="fas fa-check"></i> Kecepatan 100 Mbps</li>
+                                <li><i class="fas fa-check"></i> Valid 30 Hari</li>
+                                <li><i class="fas fa-check"></i> Support 24/7</li>
+                                <li><i class="fas fa-check"></i> Auto-login</li>
+                            </ul>
+                        </div>
+                        <div class="package-footer">
+                            <button onclick="openPurchaseModal('30 Hari', 50000)" class="package-button">Beli Sekarang</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Payment Section -->
+        <section id="payment">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Cara Pembayaran</h2>
+                    <p>Pembayaran mudah dan voucher langsung dikirim</p>
+                </div>
+                
+                <div class="payment-methods">
+                    <div class="payment-card">
+                        <i class="fas fa-qrcode"></i>
+                        <h3>QRIS</h3>
+                        <p>Bayar dengan QRIS melalui e-wallet atau mobile banking</p>
+                        <p><strong>Keuntungan:</strong> Cepat, praktis, voucher otomatis</p>
+                    </div>
+                    
+                    <div class="payment-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>E-Wallet</h3>
+                        <p>GoPay, OVO, DANA, ShopeePay, LinkAja</p>
+                        <p><strong>Keuntungan:</strong> Promo cashback, mudah digunakan</p>
+                    </div>
+                    
+                    <div class="payment-card">
+                        <i class="fas fa-university"></i>
+                        <h3>Transfer Bank</h3>
+                        <p>BCA, Mandiri, BNI, BRI, dll</p>
+                        <p><strong>Keuntungan:</strong> Aman, bisa transfer manual</p>
+                    </div>
+                    
+                    <div class="payment-card">
+                        <i class="fab fa-whatsapp"></i>
+                        <h3>WhatsApp</h3>
+                        <p>Konfirmasi pembayaran via WhatsApp</p>
+                        <p><strong>Keuntungan:</strong> Bisa tanya langsung</p>
+                    </div>
+                </div>
+                
+                <div class="payment-steps">
+                    <h3>Langkah-langkah Pembelian Voucher:</h3>
+                    <div class="steps">
+                        <div class="step">
+                            <div class="step-content">
+                                <h4>Pilih Paket</h4>
+                                <p>Klik tombol "Beli Sekarang" pada paket yang diinginkan</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-content">
+                                <h4>Isi Data</h4>
+                                <p>Masukkan nama lengkap dan nomor WhatsApp aktif</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-content">
+                                <h4>Pilih Pembayaran</h4>
+                                <p>Pilih metode pembayaran (QRIS, E-Wallet, atau Transfer Bank)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-content">
+                                <h4>Bayar & Konfirmasi</h4>
+                                <p>Lakukan pembayaran dan upload bukti pembayaran</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-content">
+                                <h4>Voucher Terkirim</h4>
+                                <p>Voucher akan otomatis dikirim ke WhatsApp Anda dalam 1-5 menit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coverage Section -->
+        <section id="coverage">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Cakupan Area</h2>
+                    <p>Jaringan ELNET WiFi mencakup seluruh lingkungan kami</p>
+                </div>
+                
+                <div class="coverage-map">
+                    <h3>Area Layanan:</h3>
+                    <div class="coverage-areas">
+                        <div class="coverage-item">
+                            <h4><i class="fas fa-home"></i> RT 01/RW 05</h4>
+                            <p>Cakupan penuh untuk semua rumah di RT 01/RW 05</p>
+                        </div>
+                        
+                        <div class="coverage-item">
+                            <h4><i class="fas fa-school"></i> Sekolah & Madrasah</h4>
+                            <p>SDN 01 Contoh, MI Al-Ikhlas, TPQ Al-Hikmah</p>
+                        </div>
+                        
+                        <div class="coverage-item">
+                            <h4><i class="fas fa-mosque"></i> Masjid & Mushola</h4>
+                            <p>Masjid Jami', Mushola Al-Ikhlas, Mushola Nurul Huda</p>
+                        </div>
+                        
+                        <div class="coverage-item">
+                            <h4><i class="fas fa-store"></i> Warung & Toko</h4>
+                            <p>Warung Pak Budi, Toko Kelontong Ibu Siti, dll</p>
+                        </div>
+                        
+                        <div class="coverage-item">
+                            <h4><i class="fas fa-tree"></i> Area Publik</h4>
+                            <p>Lapangan bola, taman bermain, pos kamling</p>
+                        </div>
+                        
+                        <div class="coverage-item">
+                            <h4><i class="fas fa-users"></i> Balai Warga</h4>
+                            <p>Posyandu, balai pertemuan, aula RT/RW</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Hubungi Kami</h2>
+                    <p>Siap membantu warga 24 jam sehari</p>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Telepon</h3>
+                        <p>+62 856-9359-5671</p>
+                        <p>Senin - Minggu: 08:00 - 22:00</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <i class="fab fa-whatsapp"></i>
+                        <h3>WhatsApp</h3>
+                        <p><a href="https://wa.me/6285693595671">+62 856-9359-5671</a></p>
+                        <p>Respon cepat 24/7</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p><a href="mailto:elnetwifi@gmail.com">elnetwifi@gmail.com</a></p>
+                        <p>Balas dalam 1x24 jam</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Alamat</h3>
+                        <p>Kantor RT 01/RW 05<br>Kelurahan Contoh<br>Kecamatan Contoh</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p>&copy; 2025 ELNET WiFi - RT/RW Net Lingkungan. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Admin Dashboard -->
+    <div id="adminDashboard" class="admin-dashboard">
+        <div class="admin-header">
+            <div class="container">
+                <h1><i class="fas fa-cogs"></i> Admin Dashboard - ELNET WiFi</h1>
+                <button onclick="logoutAdmin()" class="btn btn-danger" style="float: right;">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </button>
+            </div>
+        </div>
+
+        <div class="admin-nav">
+            <div class="container">
+                <ul>
+                    <li class="active" onclick="showAdminSection('dashboard')">
+                        <i class="fas fa-tachometer-alt"></i> Dashboard
+                    </li>
+                    <li onclick="showAdminSection('vouchers')">
+                        <i class="fas fa-ticket-alt"></i> Manajemen Voucher
+                    </li>
+                    <li onclick="showAdminSection('generate')">
+                        <i class="fas fa-plus-circle"></i> Generate Voucher
+                    </li>
+                    <li onclick="showAdminSection('settings')">
+                        <i class="fas fa-cog"></i> Pengaturan
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="admin-content">
+            <div class="container">
+                <!-- Dashboard Section -->
+                <div id="admin-dashboard" class="admin-section active">
+                    <div class="card">
+                        <h3><i class="fas fa-chart-line"></i> Statistik Voucher</h3>
+                        <div class="form-row">
+                            <div class="card" style="background: #e8f5e9;">
+                                <h4 style="color: #27ae60;">Total Voucher</h4>
+                                <p style="font-size: 2rem; font-weight: bold; color: #27ae60;" id="totalVouchers">0</p>
+                            </div>
+                            <div class="card" style="background: #e3f2fd;">
+                                <h4 style="color: #3498db;">Voucher Aktif</h4>
+                                <p style="font-size: 2rem; font-weight: bold; color: #3498db;" id="activeVouchers">0</p>
+                            </div>
+                            <div class="card" style="background: #fff3e0;">
+                                <h4 style="color: #f39c12;">Voucher Terpakai</h4>
+                                <p style="font-size: 2rem; font-weight: bold; color: #f39c12;" id="usedVouchers">0</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3><i class="fas fa-clock"></i> Aktivitas Terkini</h3>
+                        <div id="recentActivity">
+                            <p>Belum ada aktivitas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Voucher Management Section -->
+                <div id="admin-vouchers" class="admin-section">
+                    <div class="card">
+                        <h3><i class="fas fa-list"></i> Daftar Voucher</h3>
+                        <div style="margin-bottom: 20px;">
+                            <input type="text" id="searchVoucher" placeholder="Cari voucher..." style="padding: 10px; width: 300px; border: 1px solid #ddd; border-radius: 5px;">
+                            <select id="filterStatus" style="padding: 10px; border: 1px solid #ddd; border-radius: 5px; margin-left: 10px;">
+                                <option value="">Semua Status</option>
+                                <option value="active">Aktif</option>
+                                <option value="used">Terpakai</option>
+                                <option value="expired">Kadaluarsa</option>
+                            </select>
+                        </div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Kode Voucher</th>
+                                    <th>Paket</th>
+                                    <th>Dibuat</th>
+                                    <th>Kadaluarsa</th>
+                                    <th>Status</th>
+                                    <th>Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody id="vouchersTable">
+                                <tr>
+                                    <td colspan="6" style="text-align: center;">Belum ada voucher</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Generate Voucher Section -->
+                <div id="admin-generate" class="admin-section">
+                    <div class="card">
+                        <h3><i class="fas fa-plus-circle"></i> Generate Voucher Baru</h3>
+                        <form id="generateVoucherForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="voucherPackage">Paket:</label>
+                                    <select id="voucherPackage" required>
+                                        <option value="">Pilih paket</option>
+                                        <option value="6 Jam">6 Jam - Rp 5.000</option>
+                                        <option value="1 Hari">1 Hari - Rp 10.000</option>
+                                        <option value="7 Hari">7 Hari - Rp 25.000</option>
+                                        <option value="30 Hari">30 Hari - Rp 50.000</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="voucherCount">Jumlah Voucher:</label>
+                                    <input type="number" id="voucherCount" min="1" max="100" value="1" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="voucherPrefix">Prefix (Opsional):</label>
+                                    <input type="text" id="voucherPrefix" placeholder="Contoh: ELNET">
+                                </div>
+                                <div class="form-group">
+                                    <label for="profileName">Profile MikroTik:</label>
+                                    <select id="profileName" required>
+                                        <option value="">Pilih profile</option>
+                                        <option value="6jam">6Jam-50Mbps</option>
+                                        <option value="1hari">1Hari-50Mbps</option>
+                                        <option value="7hari">7Hari-75Mbps</option>
+                                        <option value="30hari">30Hari-100Mbps</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="mikrotikIP">IP MikroTik:</label>
+                                    <input type="text" id="mikrotikIP" placeholder="192.168.1.1" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="mikrotikUser">Username MikroTik:</label>
+                                    <input type="text" id="mikrotikUser" placeholder="admin" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="mikrotikPass">Password MikroTik:</label>
+                                    <input type="password" id="mikrotikPass" placeholder="password" required>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-success">
+                                <i class="fas fa-magic"></i> Generate Voucher
+                            </button>
+                        </form>
+                        
+                        <div id="generatedVouchers" style="margin-top: 30px; display: none;">
+                            <h4>Voucher Berhasil Dibuat:</h4>
+                            <div id="vouchersList" style="background: #f8f9fa; padding: 20px; border-radius: 5px; max-height: 300px; overflow-y: auto;"></div>
+                            <button onclick="exportVouchers()" class="btn btn-primary" style="margin-top: 10px;">
+                                <i class="fas fa-download"></i> Export ke CSV
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Settings Section -->
+                <div id="admin-settings" class="admin-section">
+                    <div class="card">
+                        <h3><i class="fas fa-cog"></i> Pengaturan MikroTik</h3>
+                        <form id="mikrotikSettingsForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="settingsIP">IP Address:</label>
+                                    <input type="text" id="settingsIP" value="192.168.1.1" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="settingsUser">Username:</label>
+                                    <input type="text" id="settingsUser" value="admin" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="settingsPass">Password:</label>
+                                    <input type="password" id="settingsPass" value="password" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="settingsPort">Port API:</label>
+                                    <input type="number" id="settingsPort" value="8728" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="timeout">Timeout (detik):</label>
+                                    <input type="number" id="timeout" value="10" required>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-save"></i> Simpan Pengaturan
+                            </button>
+                            <button type="button" onclick="testConnection()" class="btn btn-success" style="margin-left: 10px;">
+                                <i class="fas fa-plug"></i> Test Koneksi
+                            </button>
+                        </form>
+                        
+                        <div id="connectionStatus" style="margin-top: 20px; padding: 15px; border-radius: 5px; display: none;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Login Modal -->
+    <div id="adminLoginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2><i class="fas fa-user-shield"></i> Login Admin</h2>
+            <form id="adminLoginForm">
+                <div class="form-group">
+                    <label for="adminPassword">Password:</label>
+                    <input type="password" id="adminPassword" placeholder="Masukkan password admin" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">
+                    <i class="fas fa-sign-in-alt"></i> Login
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Purchase Modal -->
+    <div id="purchaseModal" class="purchase-modal">
+        <div class="purchase-modal-content">
+            <span class="close">&times;</span>
+            <h2>Beli Voucher <span id="modalPackage"></span></h2>
+            <form id="purchaseForm">
+                <div class="form-group">
+                    <label for="fullName">Nama Lengkap:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="whatsapp">Nomor WhatsApp:</label>
+                    <input type="tel" id="whatsapp" name="whatsapp" placeholder="628xxxxxxxxxx" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="paymentMethod">Metode Pembayaran:</label>
+                    <select id="paymentMethod" name="paymentMethod" required>
+                        <option value="">Pilih metode pembayaran</option>
+                        <option value="qris">QRIS</option>
+                        <option value="gopay">GoPay</option>
+                        <option value="ovo">OVO</option>
+                        <option value="dana">DANA</option>
+                        <option value="shopeepay">ShopeePay</option>
+                        <option value="transfer">Transfer Bank</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">Alamat Lengkap:</label>
+                    <input type="text" id="address" name="address" placeholder="RT/RW, Blok, No. Rumah" required>
+                </div>
+                
+                <button type="submit" class="btn btn-success">Lanjut ke Pembayaran</button>
+            </form>
+            
+            <div id="paymentInfo" class="payment-info">
+                <h3>Informasi Pembayaran</h3>
+                <p><strong>Paket:</strong> <span id="infoPackage"></span></p>
+                <p><strong>Harga:</strong> Rp <span id="infoPrice"></span></p>
+                <p><strong>Pembayaran:</strong> <span id="infoPayment"></span></p>
+                
+                <div class="qr-code" id="qrCodeSection">
+                    <p>Scan QR Code berikut untuk pembayaran:</p>
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=ELNET-WIFI" alt="QR Code">
+                </div>
+                
+                <p><strong>Catatan:</strong></p>
+                <ul style="text-align: left; margin-left: 20px;">
+                    <li>Lakukan pembayaran sesuai nominal yang tertera</li>
+                    <li>Upload bukti pembayaran ke WhatsApp</li>
+                    <li>Voucher akan otomatis dikirim setelah pembayaran dikonfirmasi</li>
+                    <li>Proses pengiriman voucher 1-5 menit</li>
+                </ul>
+                
+                <button onclick="confirmPayment()" class="btn btn-success" style="margin-top: 20px;">Konfirmasi Pembayaran</button>
+            </div>
+        </div>
+    </div>
+
+    
+                </div>
+            `).join('');
+            
+            container.style.display = 'block';
+        }
+
+        function updateVoucherStats() {
+            const total = vouchers.length;
+            const active = vouchers.filter(v => v.status === 'active').length;
+            const used = vouchers.filter(v => v.status === 'used').length;
+            
+            document.getElementById('totalVouchers').textContent = total;
+            document.getElementById('activeVouchers').textContent = active;
+            document.getElementById('usedVouchers').textContent = used;
+        }
+
+        function loadVouchersTable() {
+            const tbody = document.getElementById('vouchersTable');
+            const searchTerm = document.getElementById('searchVoucher').value.toLowerCase();
+            const filterStatus = document.getElementById('filterStatus').value;
+            
+            let filteredVouchers = vouchers.filter(v => {
+                const matchesSearch = v.code.toLowerCase().includes(searchTerm) || 
+                                    v.package.toLowerCase().includes(searchTerm);
+                const matchesStatus = !filterStatus || v.status === filterStatus;
+                return matchesSearch && matchesStatus;
+            });
+            
+            if (filteredVouchers.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="6" style="text-align: center;">Tidak ada voucher</td></tr>';
+                return;
+            }
+            
+            tbody.innerHTML = filteredVouchers.map(v => `
+                <tr>
+                    <td><strong>${v.code}</strong></td>
+                    <td>${v.package}</td>
+                    <td>${new Date(v.created).toLocaleString('id-ID')}</td>
+                    <td>${new Date(v.expires).toLocaleString('id-ID')}</td>
+                    <td><span class="status-badge status-${v.status}">${getStatusText(v.status)}</span></td>
+                    <td>
+                        <button onclick="deleteVoucher('${v.code}')" class="btn btn-danger" style="padding: 5px 10px; font-size: 12px;">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </td>
+                </tr>
+            `).join('');
+        }
+
+        function getStatusText(status) {
+            const statusMap = {
+                'active': 'Aktif',
+                'used': 'Terpakai',
+                'expired': 'Kadaluarsa'
+            };
+            return statusMap[status] || status;
+        }
+
+        function deleteVoucher(code) {
+            if (confirm('Apakah Anda yakin ingin menghapus voucher ini?')) {
+                vouchers = vouchers.filter(v => v.code !== code);
+                localStorage.setItem('vouchers', JSON.stringify(vouchers));
+                updateVoucherStats();
+                loadVouchersTable();
+                addActivity(`Deleted voucher ${code}`);
+            }
+        }
+
+        function exportVouchers() {
+            if (vouchers.length === 0) {
+                alert('Tidak ada voucher untuk diexport');
+                return;
+            }
+            
+            let csv = 'Kode Voucher,Paket,Dibuat,Kadaluarsa,Status\n';
+            vouchers.forEach(v => {
+                csv += `${v.code},${v.package},${new Date(v.created).toLocaleString('id-ID')},${new Date(v.expires).toLocaleString('id-ID')},${v.status}\n`;
+            });
+            
+            const blob = new Blob([csv], { type: 'text/csv' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `vouchers_${new Date().toISOString().split('T')[0]}.csv`;
+            a.click();
+            window.URL.revokeObjectURL(url);
+            
+            addActivity('Exported vouchers to CSV');
+        }
+
+        // MikroTik Settings
+        function loadMikrotikSettings() {
+            document.getElementById('settingsIP').value = mikrotikSettings.ip;
+            document.getElementById('settingsUser').value = mikrotikSettings.username;
+            document.getElementById('settingsPass').value = mikrotikSettings.password;
+            document.getElementById('settingsPort').value = mikrotikSettings.port;
+            document.getElementById('timeout').value = mikrotikSettings.timeout;
+        }
+
+        function saveMikrotikSettings(e) {
+            e.preventDefault();
+            
+            mikrotikSettings = {
+                ip: document.getElementById('settingsIP').value,
+                username: document.getElementById('settingsUser').value,
+                password: document.getElementById('settingsPass').value,
+                port: parseInt(document.getElementById('settingsPort').value),
+                timeout: parseInt(document.getElementById('timeout').value)
+            };
+            
+            localStorage.setItem('mikrotikSettings', JSON.stringify(mikrotikSettings));
+            
+            showNotification('Pengaturan berhasil disimpan', 'success');
+            addActivity('Updated MikroTik settings');
+        }
+
+        function testConnection() {
+            const statusDiv = document.getElementById('connectionStatus');
+            statusDiv.style.display = 'block';
+            statusDiv.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Menguji koneksi...';
+            statusDiv.style.background = '#e3f2fd';
+            statusDiv.style.color = '#1976d2';
+            
+            // Simulasi tes koneksi
+            setTimeout(() => {
+                const success = Math.random() > 0.3; // 70% success rate for demo
+                
+                if (success) {
+                    statusDiv.innerHTML = '<i class="fas fa-check-circle"></i> Koneksi berhasil! MikroTik terhubung.';
+                    statusDiv.style.background = '#e8f5e9';
+                    statusDiv.style.color = '#2e7d32';
+                } else {
+                    statusDiv.innerHTML = '<i class="fas fa-times-circle"></i> Koneksi gagal! Periksa pengaturan jaringan.';
+                    statusDiv.style.background = '#ffebee';
+                    statusDiv.style.color = '#c62828';
+                }
+                
+                addActivity(`Connection test: ${success ? 'Success' : 'Failed'}`);
+            }, 2000);
+        }
+
+        // Activity Log
+        function addActivity(activity) {
+            const activities = JSON.parse(localStorage.getItem('activities')) || [];
+            activities.unshift({
+                activity: activity,
+                timestamp: new Date().toISOString()
+            });
+            
+            // Keep only last 10 activities
+            if (activities.length > 10) {
+                activities.pop();
+            }
+            
+            localStorage.setItem('activities', JSON.stringify(activities));
+            updateActivityDisplay();
+        }
+
+        function updateActivityDisplay() {
+            const activities = JSON.parse(localStorage.getItem('activities')) || [];
+            const container = document.getElementById('recentActivity');
+            
+            if (activities.length === 0) {
+                container.innerHTML = '<p>Belum ada aktivitas</p>';
+                return;
+            }
+            
+            container.innerHTML = activities.map(a => `
+                <div style="padding: 10px; border-bottom: 1px solid #eee; display: flex; justify-content: space-between;">
+                    <span>${a.activity}</span>
+                    <small style="color: #666;">${new Date(a.timestamp).toLocaleString('id-ID')}</small>
+                </div>
+            `).join('');
+        }
+
+        // Purchase Modal Functions
+        function openPurchaseModal(packageName, price) {
+            document.getElementById('modalPackage').textContent = packageName;
+            document.getElementById('purchaseModal').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+            
+            // Store package info globally
+            window.selectedPackage = packageName;
+            window.selectedPrice = price;
+        }
+
+        function confirmPayment() {
+            const whatsapp = document.getElementById('whatsapp').value;
+            const message = `*KONFIRMASI PEMBAYARAN*\n\n` +
+                           `Saya sudah melakukan pembayaran untuk voucher ${window.selectedPackage}.\n\n` +
+                           `Silakan kirimkan voucher ke WhatsApp saya.`;
+            
+            const url = `https://wa.me/${whatsapp}?text=${encodeURIComponent(message)}`;
+            window.open(url, '_blank');
+            
+            // Close modal
+            document.getElementById('purchaseModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+            document.getElementById('purchaseForm').reset();
+            document.getElementById('paymentInfo').style.display = 'none';
+            
+            // Show success message
+            showNotification('Pesanan Anda telah diterima! Voucher akan segera dikirim.', 'success');
+        }
+
+        // Utility Functions
+        function showNotification(message, type = 'info') {
+            const notification = document.createElement('div');
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: ${type === 'success' ? '#27ae60' : type === 'error' ? '#e74c3c' : '#3498db'};
+                color: white;
+                padding: 15px 25px;
+                border-radius: 5px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+                z-index: 3000;
+                animation: slideInRight 0.5s ease;
+            `;
+            notification.innerHTML = `
+                <i class="fas fa-${type === 'success' ? 'check-circle' : type === 'error' ? 'exclamation-circle' : 'info-circle'}"></i> 
+                ${message}
+            `;
+            
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.remove();
+            }, 5000);
+        }
+
+        // Event Listeners
+        document.getElementById('adminLoginForm').addEventListener('submit', loginAdmin);
+        document.getElementById('generateVoucherForm').addEventListener('submit', generateVouchers);
+        document.getElementById('mikrotikSettingsForm').addEventListener('submit', saveMikrotikSettings);
+        document.getElementById('purchaseForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const fullName = document.getElementById('fullName').value;
+            const whatsapp = document.getElementById('whatsapp').value;
+            const paymentMethod = document.getElementById('paymentMethod').value;
+            const address = document.getElementById('address').value;
+            
+            // Show payment info
+            document.getElementById('infoPackage').textContent = window.selectedPackage;
+            document.getElementById('infoPrice').textContent = window.selectedPrice.toLocaleString('id-ID');
+            document.getElementById('infoPayment').textContent = getPaymentMethodName(paymentMethod);
+            
+            // Hide form and show payment info
+            document.getElementById('purchaseForm').style.display = 'none';
+            document.getElementById('paymentInfo').style.display = 'block';
+            
+            // Send order notification to admin
+            sendOrderNotification(fullName, whatsapp, window.selectedPackage, window.selectedPrice, paymentMethod, address);
+        });
+
+        // Search and filter
+        document.getElementById('searchVoucher').addEventListener('input', loadVouchersTable);
+        document.getElementById('filterStatus').addEventListener('change', loadVouchersTable);
+
+        // Modal close handlers
+        document.querySelectorAll('.close').forEach(closeBtn => {
+            closeBtn.onclick = function() {
+                this.closest('.modal').style.display = 'none';
+                this.closest('.purchase-modal').style.display = 'none';
+                document.body.style.overflow = 'auto';
+            };
+        });
+
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal') || event.target.classList.contains('purchase-modal')) {
+                event.target.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        };
+
+        function getPaymentMethodName(method) {
+            const methods = {
+                'qris': 'QRIS',
+                'gopay': 'GoPay',
+                'ovo': 'OVO',
+                'dana': 'DANA',
+                'shopeepay': 'ShopeePay',
+                'transfer': 'Transfer Bank'
+            };
+            return methods[method] || method;
+        }
+
+        function sendOrderNotification(name, whatsapp, packageName, price, paymentMethod, address) {
+            const message = `*PEMBELIAN VOUCHER ELNET WIFI*\n\n` +
+                           `Nama: ${name}\n` +
+                           `WhatsApp: ${whatsapp}\n` +
+                           `Paket: ${packageName}\n` +
+                           `Harga: Rp ${price.toLocaleString('id-ID')}\n` +
+                           `Pembayaran: ${getPaymentMethodName(paymentMethod)}\n` +
+                           `Alamat: ${address}\n\n` +
+                           `Silakan tunggu konfirmasi pembayaran dari admin.`;
+            
+            // Send to admin WhatsApp
+            const adminWhatsApp = '6285693595671';
+            const adminUrl = `https://wa.me/${adminWhatsApp}?text=${encodeURIComponent(message)}`;
+            
+            // Open admin WhatsApp in new tab
+            window.open(adminUrl, '_blank');
+            
+            // Add activity log
+            addActivity(`New order: ${packageName} for ${name}`);
+        }
+
+        // Add CSS animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes slideInRight {
+                from {
+                    transform: translateX(100%);
+                    opacity: 0;
+                }
+                to {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Initialize activity display on load
+        updateActivityDisplay();
+    </script>
+</body>
+</html>
